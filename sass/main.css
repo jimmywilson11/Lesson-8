@@ -128,6 +128,69 @@ nav {
   text-align: center;
 }
 
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.big-inf {
+  background-color: #424147;
+}
+
+.big-inf .about h2 {
+  font-size: 18px;
+}
+
+.big-inf .about p {
+  font-size: 13px;
+}
+
+.big-inf .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.big-inf .gallery img {
+  max-width: 130px;
+  max-height: 70px;
+  margin: 5px;
+}
+
+.big-inf .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.big-inf .social span {
+  font-size: 18px;
+  color: #FFF;
+}
+
+.big-inf .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+}
+
+.big-inf .social ul a {
+  width: 30px;
+  height: 30px;
+  color: #FFF;
+  padding: 3px;
+  background-color: #000;
+}
+
 @media screen and (max-width: 420px) {
   .header-container {
     width: 100%;
