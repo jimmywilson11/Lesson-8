@@ -1,0 +1,214 @@
+body 
+    font-family: "Century Gothic", sans-serif
+    a
+        text-decoration: none
+header 
+    background-color: #F6F6F6
+    padding: 22px 0
+nav
+    margin-top: 20px
+#main-menu
+    display: flex
+    justify-content: space-between 
+#menu-checkbox
+    display: none  
+.nav-item
+    a
+        text-transform: uppercase
+        padding: 27px 6px
+        &:hover
+            color: #000
+            background-color: #FFEA00
+            text-decoration: none
+
+#slider
+    padding-top: 120px
+    padding-bottom: 300px
+    background: url(../img/slider_bg.png)
+    &:nth-last-child(2)
+        margin-bottom: 10px
+        
+
+.slider-description
+    
+    h2
+        
+        background-color: #FFEA00
+        text-transform: uppercase
+        padding: 0 13px
+        font-size: 70px
+    p
+        
+        background-color: #414146
+        font-size: 24px
+        color: #FFF
+        text-transform: uppercase
+        padding: 4px
+    a 
+        display: block
+        margin: 0 auto
+        width: 192px
+        height: 46px
+        padding: 5px 20px
+        text-decoration: none
+        text-align: center
+        font-size: 26px
+        background-color: #000
+        color: #FFF
+            
+        &:hover
+            border-bottom: 2px solid #FFEA00
+            text-decoration: none
+            color: #FFF
+.faces
+    position: absolute
+    margin-left: 38%
+    margin-top: -75px
+
+#content
+    margin-top: 92px
+    h2
+        font-size: 35px
+        text-transform: uppercase
+        text-align: center
+    p
+        font-size: 24px
+        text-align: center
+
+#our-work
+.work
+    width: 165px
+    height: 31px 
+    background-color: #424147
+    color: #FFEA00
+    text-transform: uppercase
+    text-align: center
+
+#clients
+    p
+        font-size: 16px  
+.our-clients
+    width: 165px
+    height: 31px 
+    background-color: #424147
+    color: #FFEA00
+    text-transform: uppercase
+    text-align: center 
+
+@media screen and ( max-width: 420px )
+    .header-container
+        width: 100%
+        justify-content: space-around
+    .main-menu
+        display: none
+        li
+            width: 100%
+            display: block
+            font-size: 12px
+            text-align: center
+            a
+                display: block
+                padding: 8px
+    .toggle-button
+        display: block
+        cursor: pointer
+        text-align: center
+        color: #000
+        margin-top: 45px
+        &::after
+            content: attr(data-open)
+            display: block
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu
+        display: block
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after
+        content: attr(data-close)
+    #slider
+        padding-top: 15px
+        padding-bottom: 10px
+    .slider-description
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        h2
+            margin: 0 auto
+            font-size: 50px
+            padding-bottom: 5px
+        p
+            padding: 5px
+        a
+            width: 50%       
+    .faces
+        position: relative
+        margin: 10px 5px
+        
+        img
+            width: 100%
+    #content
+        margin-top: 20px
+        h2
+            font-size: 25px
+        p
+            font-size: 18px
+            margin-bottom: 20px
+    
+    #our-works
+    .work
+        margin: 0 auto
+        padding-top: 4px
+        width: 45%
+        margin-bottom: 5px
+        &::after 
+            position: absolute
+            content: ''
+            width: calc(50% - 32px)
+            display: block
+            height: 2px
+            background: #CACACA
+            z-index: 1
+            left: 75%
+            top: 131%
+            transform: translateY(-50%)
+        &::before
+            position: absolute
+            content: ''
+            width: calc(50% - 32px)
+            display: block
+            height: 2px
+            background: #CACACA
+            z-index: 1
+            left: -15%
+            top: 131%
+            transform: translateY(-50%)
+    #clients
+        p
+            font-size: 12px
+            text-align: center
+    .our-clients
+        margin: 0 auto
+        padding-top: 4px
+        width: 50%
+        margin-bottom: 5px
+        &::after 
+            position: absolute
+            content: ''
+            width: calc(50% - 32px)
+            display: block
+            height: 2px
+            background: #CACACA
+            z-index: 1
+            left: 75%
+            top: 25%
+            transform: translateY(-50%)
+        &::before
+            position: absolute
+            content: ''
+            width: calc(50% - 32px)
+            display: block
+            height: 2px
+            background: #CACACA
+            z-index: 1
+            left: -15%
+            top: 25%
+            transform: translateY(-50%)
+            
+

@@ -1,6 +1,7 @@
 body {
   font-family: "Century Gothic", sans-serif;
 }
+
 body a {
   text-decoration: none;
 }
@@ -31,6 +32,7 @@ nav {
   text-transform: uppercase;
   padding: 27px 6px;
 }
+
 .nav-item a:hover {
   color: #000;
   background-color: #FFEA00;
@@ -42,6 +44,7 @@ nav {
   padding-bottom: 300px;
   background: url(../img/slider_bg.png);
 }
+
 #slider:nth-last-child(2) {
   margin-bottom: 10px;
 }
@@ -52,6 +55,7 @@ nav {
   padding: 0 13px;
   font-size: 70px;
 }
+
 .slider-description p {
   background-color: #414146;
   font-size: 24px;
@@ -59,6 +63,7 @@ nav {
   text-transform: uppercase;
   padding: 4px;
 }
+
 .slider-description a {
   display: block;
   margin: 0 auto;
@@ -71,6 +76,7 @@ nav {
   background-color: #000;
   color: #FFF;
 }
+
 .slider-description a:hover {
   border-bottom: 2px solid #FFEA00;
   text-decoration: none;
@@ -86,11 +92,13 @@ nav {
 #content {
   margin-top: 92px;
 }
+
 #content h2 {
   font-size: 35px;
   text-transform: uppercase;
   text-align: center;
 }
+
 #content p {
   font-size: 24px;
   text-align: center;
@@ -124,7 +132,6 @@ nav {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-
   .main-menu {
     display: none;
   }
@@ -138,7 +145,6 @@ nav {
     display: block;
     padding: 8px;
   }
-
   .toggle-button {
     display: block;
     cursor: pointer;
@@ -150,20 +156,16 @@ nav {
     content: attr(data-open);
     display: block;
   }
-
   #menu-checkbox:checked + nav[role="navigation"] .main-menu {
     display: block;
   }
-
   #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
     content: attr(data-close);
   }
-
   #slider {
     padding-top: 15px;
     padding-bottom: 10px;
   }
-
   .slider-description {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -186,7 +188,6 @@ nav {
   .slider-description a {
     width: 50%;
   }
-
   .faces {
     position: relative;
     margin: 10px 5px;
@@ -194,7 +195,6 @@ nav {
   .faces img {
     width: 100%;
   }
-
   #content {
     margin-top: 20px;
   }
@@ -205,7 +205,6 @@ nav {
     font-size: 18px;
     margin-bottom: 20px;
   }
-
   .work {
     margin: 0 auto;
     padding-top: 4px;
@@ -214,7 +213,7 @@ nav {
   }
   .work::after {
     position: absolute;
-    content: "";
+    content: '';
     width: calc(50% - 32px);
     display: block;
     height: 2px;
@@ -227,7 +226,7 @@ nav {
   }
   .work::before {
     position: absolute;
-    content: "";
+    content: '';
     width: calc(50% - 32px);
     display: block;
     height: 2px;
@@ -238,12 +237,10 @@ nav {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-
   #clients p {
     font-size: 12px;
     text-align: center;
   }
-
   .our-clients {
     margin: 0 auto;
     padding-top: 4px;
@@ -252,7 +249,7 @@ nav {
   }
   .our-clients::after {
     position: absolute;
-    content: "";
+    content: '';
     width: calc(50% - 32px);
     display: block;
     height: 2px;
@@ -265,7 +262,7 @@ nav {
   }
   .our-clients::before {
     position: absolute;
-    content: "";
+    content: '';
     width: calc(50% - 32px);
     display: block;
     height: 2px;
@@ -277,3 +274,4 @@ nav {
             transform: translateY(-50%);
   }
 }
+/*# sourceMappingURL=main.css.map */
