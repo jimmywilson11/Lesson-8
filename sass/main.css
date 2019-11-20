@@ -220,7 +220,7 @@ nav {
     background: #CACACA;
     z-index: 1;
     left: 75%;
-    top: 131%;
+    top: 129%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
@@ -232,8 +232,8 @@ nav {
     height: 2px;
     background: #CACACA;
     z-index: 1;
-    left: -15%;
-    top: 131%;
+    left: -17%;
+    top: 129%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
@@ -268,7 +268,7 @@ nav {
     height: 2px;
     background: #CACACA;
     z-index: 1;
-    left: -15%;
+    left: -18%;
     top: 25%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
