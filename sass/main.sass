@@ -1,17 +1,19 @@
-body 
+@import url(../fonts/fonts.css)
+
+body
     font-family: "Century Gothic", sans-serif
     a
         text-decoration: none
-header 
+header
     background-color: #F6F6F6
     padding: 22px 0
 .navigation
     margin-top: 20px
 #main-menu
     display: flex
-    justify-content: space-between 
+    justify-content: space-between
 #menu-checkbox
-    display: none  
+    display: none
 .nav-item
     a
         text-transform: uppercase
@@ -23,30 +25,28 @@ header
 
 #slider
     padding-top: 120px
-    padding-bottom: 300px
     background: url(../img/slider_bg.png)
     &:nth-last-child(2)
         margin-bottom: 10px
-        
 
-.slider-description
-    
+    .title
+        display: flex
+        margin-left: 3px
+
     h2
-        
+        display: inline
         background-color: #FFEA00
         text-transform: uppercase
-        padding: 0 13px
         font-size: 70px
     p
-        
+        display: inline
         background-color: #414146
         font-size: 24px
         color: #FFF
         text-transform: uppercase
-        padding: 4px
-    a 
+
+    a
         display: block
-        margin: 0 auto
         width: 192px
         height: 46px
         padding: 5px 20px
@@ -55,15 +55,11 @@ header
         font-size: 26px
         background-color: #000
         color: #FFF
-            
+
         &:hover
             border-bottom: 2px solid #FFEA00
             text-decoration: none
             color: #FFF
-.faces
-    position: absolute
-    margin-left: 38%
-    margin-top: -75px
 
 #content
     margin-top: 92px
@@ -78,8 +74,9 @@ header
 #our-work
 .work
     position: relative
+    margin: 0 auto
     width: 165px
-    height: 31px 
+    height: 31px
     background-color: #424147
     color: #FFEA00
     text-transform: uppercase
@@ -87,27 +84,28 @@ header
 
 #clients
     p
-        font-size: 16px  
+        font-size: 16px
+        text-align: center
 .our-clients
     position: relative
+    margin: 0 auto
     width: 165px
-    height: 31px 
+    height: 31px
     background-color: #424147
     color: #FFEA00
     text-transform: uppercase
-    text-align: center 
+    text-align: center
 
 #footer
     display: flex
     flex-wrap: wrap
-    
-    
+
 .big-inf
     padding-top: 30px
     background-color: #424147
     display: flex
-    
-    span 
+
+    span
         color: #FFEA00
     h2
         font-size: 18px
@@ -116,21 +114,21 @@ header
         color: #FFF
         font-size: 13px
     .btn-learn
-            margin: 0 auto
+        margin: 0 auto
     .gallery
         display: flex
         flex-wrap: wrap
-        img 
+        img
             max-width: 180px
             max-height: 110px
             margin: 5px
     .social
         display: flex
         justify-content: space-between
-        span 
+        span
             font-size: 18px
             color: #FFF
-        ul 
+        ul
             display: flex
             justify-content: space-around
             width: 100%
@@ -141,12 +139,12 @@ header
                 a
                     text-align: center
                     color: #FFF
-                                
+    
 .black
     background-color: #000
     padding-top: 30px
     padding-bottom: 20px
-    
+
     .container
         display: flex
         justify-content: space-around
@@ -154,11 +152,10 @@ header
     p
         font-size: 14px
         color: #FFF
-    ul 
+    ul
         display: flex
         a
             color: #FFF
-
 
 @media screen and ( max-width: 420px )
     .header-container
@@ -187,6 +184,7 @@ header
         display: block
     #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after
         content: attr(data-close)
+    
     #slider
         padding-top: 15px
         padding-bottom: 10px
@@ -194,18 +192,26 @@ header
         display: flex
         flex-direction: column
         justify-content: space-around
-        h2
-            margin: 0 auto
-            font-size: 50px
-            padding-bottom: 5px
-        p
-            padding: 5px
-        a
-            width: 50%       
+        margin: 0 auto
+    .title
+        padding-bottom: 5px
+        padding-left: 3px
+    h2
+        margin: 0 auto
+        font-size: 45px
+        padding-bottom: 5px
+    p
+        text-align: center
+        font-size: 14px
+        padding: 5px
+    a
+        margin: 0 auto
+        width: 40%
+
     .faces
         position: relative
         margin: 10px 5px
-        
+
         img
             width: 100%
     #content
@@ -215,14 +221,14 @@ header
         p
             font-size: 18px
             margin-bottom: 20px
-    
+
     #our-works
     .work
         margin: 0 auto
         padding-top: 4px
         width: 45%
         margin-bottom: 5px
-        &::after 
+        &::after
             position: absolute
             content: ''
             width: 57%
@@ -253,7 +259,7 @@ header
         padding-top: 4px
         width: 50%
         margin-bottom: 5px
-        &::after 
+        &::after
             position: absolute
             content: ''
             width: 52%
@@ -282,9 +288,9 @@ header
         text-align: center
     .about
         p
-            text-align: center   
+            text-align: center
     .gallery
-        justify-content: center 
+        justify-content: center
         img
             max-width: 180px
             max-height: 110px
@@ -325,7 +331,7 @@ header
         font-style: normal
         li
             padding-bottom: 4px
-            i    
+            i
                 padding: 7px
                 width: 30px
                 height: 30px
@@ -337,17 +343,242 @@ header
                 color: #FFF
             p
                 font-size: 18px
-    .mailchimp
-        margin: 0 auto
-        p
-            text-align: center
-            padding-bottom: 10px 
-             
+
+    .field-group
+        padding-bottom: 15px
+
     .email
         border: none
         background-color: #414146
         border-bottom: 2px solid #FFEA00
 
+    .copyright
+        text-align: center
+        padding-bottom: 10px
+    .footer-menu-box
+        display: flex
+        margin-top: 10px
+    .footet-menu
+        justify-content: center
+
+@media screen and ( max-width: 576px )
+    .main-menu
+        display: none
+        li
+            width: 100%
+            display: block
+            font-size: 12px
+            text-align: center
+            a
+                display: block
+                padding: 8px
+    .toggle-button
+        display: block
+        cursor: pointer
+        text-align: center
+        color: #000
+        margin-top: 45px
+        &::after
+            content: attr(data-open)
+            display: block
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu
+        display: block
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after
+        content: attr(data-close)
+
+    .title
+        padding-bottom: 5px
+        padding-left: 3px
+        h2
+            margin: 0 auto
+            font-size: 45px
+            padding-bottom: 5px
+        p
+            text-align: center
+            font-size: 14px
+            padding: 5px
+        a
+            margin: 0 auto
+            margin-top: 30px
+            width: 40%
+
+    .faces
+        position: relative
+        margin: 10px 5px
+        img
+            width: 100%
+    #footer
+        display: flex
+        flex-wrap: wrap
+    h2
+        text-align: center
+    .gallery
+        justify-content: center
+        img
+            max-width: 230px
+            max-height: 130px
+            margin: 5px
+    .social
+        flex-direction: column
+        align-items: center
+        ul
+            width: 100%
+            justify-content: space-around
+        i
+            padding: 7px
+    .fa-facebook-f:hover
+        color: #2F55A4
+    .fa-google-plus-g:hover
+        color: #86000b
+    .fa-tumblr:hover
+        color: #34526F
+    .fa-linkedin-in:hover
+        color: #000000
+        background-color: #FFF
+    .fa-youtube-square:hover
+        color: #FF0000
+    .fa-blogger-b:hover
+        color: #FF9100
+    .fa-rss:hover
+        color: #000000
+        background-color: #FFF
+    .fa-dribbble:hover
+        color: #FF00EA
+    
+    address
+        font-style: normal
+        li
+            padding-bottom: 4px
+            i
+                padding: 7px
+                width: 30px
+                height: 30px
+                background-color: #000
+                color: #FFF
+            a
+                font-size: 18px
+                text-decoration: none
+                color: #FFF
+            p
+                font-size: 18px
+
+    .field-group
+        display: flex
+        justify-content: center
+        padding-bottom: 15px
+
+    .email
+        border: none
+        background-color: #414146
+        border-bottom: 2px solid #FFEA00
+
+    .copyright
+        text-align: center
+        padding-bottom: 10px
+    .footer-menu-box
+        display: flex
+        margin-top: 10px
+    .footet-menu
+        justify-content: center
+
+@media screen and ( max-width: 768px )
+    .main-menu
+        display: none
+        li
+            width: 100%
+            display: block
+            font-size: 12px
+            text-align: center
+            a
+                display: block
+                padding: 8px
+    .toggle-button
+        display: block
+        cursor: pointer
+        text-align: center
+        color: #000
+        margin-top: 45px
+        &::after
+            content: attr(data-open)
+            display: block
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu
+        display: block
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after
+        content: attr(data-close)
+    .title
+        padding-bottom: 5px
+        padding-left: 3px
+    a
+        margin: 0 auto
+        margin-top: 15px
+        margin-bottom: 15px
+    .faces
+        position: relative
+        margin: 10px 5px
+        img
+            width: 100%    
+    #footer
+    
+    h2
+        text-align: center
+    .gallery
+        justify-content: center
+    
+    .social
+        flex-direction: row
+        align-items: center
+        ul
+            width: 100%
+            display: flex
+            justify-content: center
+        i
+            padding: 7px
+    .fa-facebook-f:hover
+        color: #2F55A4
+    .fa-google-plus-g:hover
+        color: #86000b
+    .fa-tumblr:hover
+        color: #34526F
+    .fa-linkedin-in:hover
+        color: #000000
+        background-color: #FFF
+    .fa-youtube-square:hover
+        color: #FF0000
+    .fa-blogger-b:hover
+        color: #FF9100
+    .fa-rss:hover
+        color: #000000
+        background-color: #FFF
+    .fa-dribbble:hover
+        color: #FF00EA
+    
+    address
+        font-style: normal
+        li
+            padding-bottom: 4px
+            i
+                padding: 7px
+                width: 30px
+                height: 30px
+                background-color: #000
+                color: #FFF
+            a
+                font-size: 18px
+                text-decoration: none
+                color: #FFF
+            p
+                font-size: 18px
+
+    .field-group
+        display: flex
+        justify-content: center
+        padding-bottom: 15px
+
+    .email
+        border: none
+        background-color: #414146
+        border-bottom: 2px solid #FFEA00
+    
     .copyright
         text-align: center
         padding-bottom: 10px
