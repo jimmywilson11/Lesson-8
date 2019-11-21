@@ -105,6 +105,10 @@ header
     background-color: #424147
     display: flex
 
+.tweets
+    display: flex
+    flex-direction: column
+    
     span
         color: #FFEA00
     h2
@@ -113,32 +117,41 @@ header
     p
         color: #FFF
         font-size: 13px
-    .btn-learn
-        margin: 0 auto
-    .gallery
+
+.fa-twitter
+    color: #FFF
+    font-size: 25px
+    display: inline
+
+   
+.btn-learn
+    margin: 0 auto
+    
+.gallery
+    display: flex
+    flex-wrap: wrap
+    img
+        max-width: 180px
+        max-height: 110px
+        margin: 5px
+.social
+    display: flex
+    justify-content: space-between
+        
+    span
+        font-size: 18px
+        color: #FFF
+    ul
         display: flex
-        flex-wrap: wrap
-        img
-            max-width: 180px
-            max-height: 110px
-            margin: 5px
-    .social
-        display: flex
-        justify-content: space-between
-        span
-            font-size: 18px
-            color: #FFF
-        ul
-            display: flex
-            justify-content: space-around
-            width: 100%
-            li
-                width: 30px
-                height: 30px
-                background-color: #000
-                a
-                    text-align: center
-                    color: #FFF
+        justify-content: space-around
+        width: 100%
+        li
+            width: 30px
+            height: 30px
+            background-color: #000
+            a
+                text-align: center
+                color: #FFF
     
 .black
     background-color: #000
@@ -295,9 +308,6 @@ header
             max-width: 180px
             max-height: 110px
             margin: 5px
-    .fa-twitter
-        display: inline
-        font-size: 50px
     p
         display: inline
     .social

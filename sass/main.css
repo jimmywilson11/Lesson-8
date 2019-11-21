@@ -147,25 +147,41 @@ header {
   display: flex;
 }
 
-.big-inf span {
+.tweets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tweets span {
   color: #FFEA00;
 }
 
-.big-inf h2 {
+.tweets h2 {
   font-size: 18px;
   color: #FFF;
 }
 
-.big-inf p {
+.tweets p {
   color: #FFF;
   font-size: 13px;
 }
 
-.big-inf .btn-learn {
+.fa-twitter {
+  color: #FFF;
+  font-size: 25px;
+  display: inline;
+}
+
+.btn-learn {
   margin: 0 auto;
 }
 
-.big-inf .gallery {
+.gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,13 +189,13 @@ header {
       flex-wrap: wrap;
 }
 
-.big-inf .gallery img {
+.gallery img {
   max-width: 180px;
   max-height: 110px;
   margin: 5px;
 }
 
-.big-inf .social {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,12 +204,12 @@ header {
           justify-content: space-between;
 }
 
-.big-inf .social span {
+.social span {
   font-size: 18px;
   color: #FFF;
 }
 
-.big-inf .social ul {
+.social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,13 +218,13 @@ header {
   width: 100%;
 }
 
-.big-inf .social ul li {
+.social ul li {
   width: 30px;
   height: 30px;
   background-color: #000;
 }
 
-.big-inf .social ul li a {
+.social ul li a {
   text-align: center;
   color: #FFF;
 }
@@ -421,10 +437,6 @@ header {
     max-width: 180px;
     max-height: 110px;
     margin: 5px;
-  }
-  .fa-twitter {
-    display: inline;
-    font-size: 50px;
   }
   p {
     display: inline;
