@@ -1,4 +1,14 @@
 $(document).ready(function(){
+  
+  var $container = $(".masonry-container");
+  $container.imagesLoaded(function () {
+    $container.masonry({
+      columnWidth: ".item",
+      itemSelector: ".item"
+    });
+  });
+  
+  
   $(".owl-carousel").owlCarousel({
     autoPlay: 2000,
     items: 8

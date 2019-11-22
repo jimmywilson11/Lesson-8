@@ -132,6 +132,19 @@ body {
   padding: 5px  15px;
 }
 
+#our-works p {
+  text-align: center;
+}
+
+.item {
+  padding: 0;
+  margin: 3px;
+}
+
+.item img {
+  max-width: 100%;
+}
+
 #clients {
   text-align: center;
 }
