@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Century Gothic';
-    src: url('CenturyGothic.eot');
-    src: url('CenturyGothic.eot?#iefix') format('embedded-opentype'),
-    url('CenturyGothic.woff') format('woff'),
-    url('CenturyGothic.ttf') format('truetype');
+    src: url('../fonts/CenturyGothic.eot');
+    src: url('../fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CenturyGothic.woff') format('woff'),
+    url('../fonts/CenturyGothic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Code Light";
-    src: url("CODE Light.otf");
+    src: url("../fonts/CODE Light.otf");
     font-weight: normal;
     font-style: normal;
 }
