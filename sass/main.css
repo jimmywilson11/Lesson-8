@@ -107,6 +107,7 @@ body {
 }
 
 .content-description h2 {
+  margin-top: 90px;
   font-size: 35px;
   text-transform: uppercase;
   text-align: center;
@@ -115,6 +116,47 @@ body {
 .content-description p {
   font-size: 24px;
   text-align: center;
+}
+
+.card-deck {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.card {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card:hover > .overlay {
+  display: block;
+  width: 100%;
+}
+
+.card .card-body {
+  background-color: #FFEA00;
+}
+
+.card .card-body .card-text {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.card .card-footer {
+  resize: none;
+  background-color: #414146;
+}
+
+.card .card-footer p {
+  font-size: 15px;
+  color: #FFF;
+  margin-bottom: 1px;
+}
+
+.card .overlay {
+  position: absolute;
+  display: none;
 }
 
 .head-block {
@@ -132,7 +174,12 @@ body {
   padding: 5px  15px;
 }
 
+#our-works {
+  padding-bottom: 90px;
+}
+
 #our-works p {
+  margin-top: 34px;
   text-align: center;
 }
 
@@ -145,7 +192,8 @@ body {
   max-width: 100%;
 }
 
-#clients {
+#clients p {
+  margin-top: 34px;
   text-align: center;
 }
 
@@ -223,6 +271,17 @@ body {
 .big-inf .col .tweets li {
   line-height: 15px;
   margin-bottom: 5px;
+}
+
+.big-inf .col .tweets li::before {
+  content: '';
+  display: block;
+  height: 30px;
+  width: 30px;
+  color: #FFF;
+  background-image: url("../src/twitter-brands.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .big-inf .col .tweets span {
@@ -314,7 +373,9 @@ body {
 }
 
 .big-inf .col address {
+  padding-top: 5px;
   font-style: normal;
+  padding-bottom: 5px;
 }
 
 .big-inf .col address li {
@@ -322,31 +383,52 @@ body {
 }
 
 .big-inf .col address li i {
-  padding: 7px;
-  width: 30px;
-  height: 30px;
+  padding: 6px;
+  width: 28px;
+  height: 28px;
   background-color: #000;
   color: #FFF;
 }
 
 .big-inf .col address li a {
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   color: #FFF;
 }
 
+.big-inf .col address li a:hover {
+  color: #FFEA00;
+}
+
 .big-inf .col address li p {
-  font-size: 18px;
+  display: inline;
+  font-size: 13px;
 }
 
 .big-inf .col address li span {
+  font-size: 13;
   color: #FFF;
 }
 
 .big-inf .col .email {
+  font-size: 20px;
   border: none;
   background-color: #414146;
   border-bottom: 2px solid #FFEA00;
+}
+
+.big-inf .col .formEmailButton {
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  color: #FFF;
+  font-size: 25px;
+  text-align: center;
+  border-style: none;
+}
+
+.big-inf .col .formEmailButton:hover {
+  color: #FFEA00;
 }
 
 .black {

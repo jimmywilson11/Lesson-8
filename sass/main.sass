@@ -76,13 +76,42 @@ body
 
 .content-description
     h2
+        margin-top: 90px
         font-size: 35px
         text-transform: uppercase
         text-align: center
     p
         font-size: 24px
         text-align: center
+.card-deck
+    padding-top: 60px
+    padding-bottom: 90px
 
+.card
+    position: relative
+    margin: 0 auto
+    text-align: center
+    &:hover > .overlay
+        display: block
+        width: 100%
+        
+    .card-body
+        background-color: #FFEA00
+        .card-text
+            text-transform: uppercase
+            font-size: 20px
+ 
+    .card-footer
+        resize: none
+        background-color: #414146
+        p
+            font-size: 15px
+            color: #FFF
+            margin-bottom: 1px
+    .overlay
+        position: absolute
+        display: none
+     
 
 .head-block
     position: relative
@@ -96,7 +125,9 @@ body
         text-transform: uppercase
         padding: 5px  15px
 #our-works
+    padding-bottom: 90px
     p
+        margin-top: 34px
         text-align: center
 .item 
     padding: 0
@@ -106,7 +137,8 @@ body
 
 #clients
     p
-    text-align: center
+        margin-top: 34px
+        text-align: center
 .big-inf
     padding-top: 30px
     background-color: #424147
@@ -153,6 +185,17 @@ body
             li
                 line-height: 15px
                 margin-bottom: 5px
+                &::before
+                    content: ''
+                    display: block
+                    height: 30px 
+                    width: 30px
+                    color: #FFF 
+                    background-image: url('../src/twitter-brands.svg')
+                    background-size: contain
+                    background-repeat: no-repeat
+                    
+                    
             span
                 color: #FFEA00
             .time
@@ -201,28 +244,44 @@ body
                 color: #FF00EA
         
         address
+            padding-top: 5px
             font-style: normal
+            padding-bottom: 5px
             li
                 padding-bottom: 4px
                 i
-                    padding: 7px
-                    width: 30px
-                    height: 30px
+                    padding: 6px
+                    width: 28px
+                    height: 28px
                     background-color: #000
                     color: #FFF
                 a
-                    font-size: 18px
+                    font-size: 16px
                     text-decoration: none
                     color: #FFF
+                    &:hover
+                        color: #FFEA00
                 p
-                    font-size: 18px
+                    display: inline
+                    font-size: 13px
                 span
+                    font-size: 13
                     color: #FFF
         .email
+            font-size: 20px
             border: none
             background-color: #414146
             border-bottom: 2px solid #FFEA00
-    
+        .formEmailButton
+            width: 35px
+            height: 35px
+            background-color: #000
+            color: #FFF
+            font-size: 25px
+            text-align: center
+            border-style: none
+            &:hover
+                color: #FFEA00    
 .black
     background-color: #000
     padding-top: 30px
