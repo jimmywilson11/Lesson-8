@@ -20,3 +20,9 @@ if($(window).width() < 420) {
     items: 3
   });
 };
+
+if($(window).width() < 576) {
+  $(".owl-carousel").owlCarousel({
+    items: 5
+  });
+};
