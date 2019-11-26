@@ -14,17 +14,20 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.main-menu .nav-item {
   text-align: center;
 }
 
-.main-menu a {
+.main-menu .nav-item a {
   font-family: "Code Light", serif;
   font-style: normal;
   text-transform: uppercase;
   padding: 27px 6px;
 }
 
-.main-menu a:hover {
+.main-menu .nav-item a:hover {
   color: #000;
   background-color: #FFEA00;
   text-decoration: none;
@@ -44,14 +47,21 @@ body {
       flex-wrap: wrap;
 }
 
-.description h2 {
+.title {
   display: inline;
   background-color: #FFEA00;
   text-transform: uppercase;
   font-size: 70px;
 }
 
-.description p {
+.title h2 {
+  display: inline;
+  background-color: #FFEA00;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+.description-text {
   display: inline;
   background-color: #414146;
   font-size: 24px;
@@ -60,9 +70,10 @@ body {
 }
 
 .btn-order {
+  display: block;
+  margin: 0 auto;
   width: 192px;
-  height: 46px;
-  padding: 5px 20px;
+  padding: 5px 10px;
   text-decoration: none;
   text-align: center;
   font-size: 26px;
@@ -257,11 +268,12 @@ body {
   margin: 0 auto;
   background-color: #000;
   width: 122px;
-  height: 40px;
   text-decoration: none;
   text-align: center;
   padding: 10px;
   margin-bottom: 15px;
+  border-bottom: 2px solid transparent;
+  outline: none;
 }
 
 .big-inf .col .btn-learn:hover {
