@@ -1,24 +1,24 @@
 @import url(../css/fonts.css)
+@import variables.sass
 
 body
-    font-family: "Century Gothic", sans-serif
+    font-family: $main-font
 .container
     max-width: 1400px
-
 .main-menu
-    flex-grow: .5
+    flex-grow: .4
     justify-content: space-between
     .nav-item
-    text-align: center
-    a
-        font-family: "Code Light", serif
-        font-style: normal
-        text-transform: uppercase
-        padding: 27px 6px
-        &:hover 
-            color: #000
-            background-color: #FFEA00
-            text-decoration: none
+        text-align: center
+        a
+            font-family: $menu-font
+            text-transform: uppercase
+            padding: 27px 6px
+            color: $black
+            &:hover 
+                color: $black
+                background-color: $yellow
+                text-decoration: none    
 #slider
     padding-top: 50px
     background: url(../img/slider_bg.png)
@@ -26,47 +26,49 @@ body
         margin-bottom: 10px
 .description
     flex-wrap: wrap    
+.title
+    display: inline
+    background-color: $yellow
+    text-transform: uppercase
+    font-size: 70px
     h2
         display: inline
-        background-color: #FFEA00
+        background-color: $yellow
         text-transform: uppercase
         font-size: 70px
-    p
-        display: inline
-        background-color: #414146
-        font-size: 24px
-        color: #FFF
-        text-transform: uppercase
+.description-text
+    display: inline
+    background-color: $gray
+    font-size: 24px
+    color: $white
+    text-transform: uppercase    
 .btn-order
+    display: block
+    margin: 0 auto
     width: 192px
-    height: 46px
-    padding: 5px 20px
+    padding: 5px 10px
     text-decoration: none
     text-align: center
     font-size: 26px
-    background-color: #000
-    color: #FFF
+    background-color: $black
+    color: $white
     &:hover
-        border-bottom: 2px solid #FFEA00
+        border-bottom: 2px solid $yellow
         text-decoration: none
-        color: #FFF
+        color: $white
 .faces
     position: relative
-    margin: 35px auto
-    img
+    margin: 0 auto
+    img    
         margin-left: 30px
-        
-
-.indicators
-  li
-    width: 10px
-    height: 10px
-    background-color: #464646
-    border: 3px solid #000
-  
-  .active
-    background-color: #FFEA00
-
+.indicators  
+    li
+        width: 10px
+        height: 10px
+        background-color: #464646
+        border: 3px solid $black
+    .active
+        background-color: $yellow
 .content-description
     h2
         margin-top: 90px
@@ -79,7 +81,6 @@ body
 .card-deck
     padding-top: 60px
     padding-bottom: 90px
-
 .card
     position: relative
     margin: 0 auto
@@ -87,25 +88,19 @@ body
     width: 80%
     &:hover > .overlay
         display: block
-        width: 78%
-        
+        width: 78%        
     .card-body
-        background-color: #FFEA00
-        
+        background-color: $yellow       
         .card-text
             text-transform: uppercase
-            font-size: 20px
- 
+            font-size: 20px 
     .card-footer
         resize: none
-        background-color: #414146
-        
-        
+        background-color: $gray       
         p
             font-size: 15px
-            color: #FFF
-            margin-bottom: 1px
-        
+            color: $white
+            margin-bottom: 1px       
     .overlay
         position: absolute
         display: none
@@ -117,14 +112,12 @@ body
             left: 180px
             bottom: 45px
             border: 10px solid transparent
-            border-bottom: 10px solid #414146
-     
-
+            border-bottom: 10px solid $gray
 .head-block
     position: relative
     margin: 0 auto
     max-width: 165px
-    background-color: #424147
+    background-color: $light-gray
     &::before
         position: absolute
         content: ''
@@ -132,12 +125,12 @@ body
         right: 110%
         display: block
         height: 2px
-        background: #414146
+        background: $gray
         z-index: 1
         top: 50%
     h2
         font-size: 18px
-        color: #FFEA00
+        color: $yellow
         text-align: center
         text-transform: uppercase
         padding: 5px  15px
@@ -152,14 +145,29 @@ body
     max-width: 32%
     img
         max-width: 100%
-
 #clients
     p
         margin-top: 34px
         text-align: center
+.owl-nav
+    position: absolute
+    z-index: 2
+    padding: 7px 7px
+    background-color: $black
+    cursor: pointer
+    opacity: 1
+    span
+        color: $white
+    &:hover 
+        opacity: 0.7 
+    .arrow-left  
+        top: 50%
+        left: -800%
+    .arrow-right 
+        top: 50%           
 .big-inf
     padding-top: 30px
-    background-color: #424147
+    background-color: $light-gray
     display: flex
     .container
         display: flex
@@ -167,29 +175,28 @@ body
         justify-content: space-between
     .col
         padding-right: 0px
-        padding-left: 0px       
+        padding-left: 0px
+        color: $white       
         h2
             font-size: 18px
-            color: #FFF
-        p
-            color: #FFF
+        p           
             font-size: 13px
         a
-            color: #FFF               
+            color: $white                 
         .btn-learn
             display: block
             margin: 0 auto
-            background-color: #000
+            background-color: $black
             width: 122px
-            height: 40px
             text-decoration: none
             text-align: center
             padding: 10px
             margin-bottom: 15px
+            border-bottom: 2px solid transparent
+            outline: none
             &:hover
-                border-bottom: 2px solid #FFEA00
-                outline: none
-                    
+                border-bottom: 2px solid $yellow
+                outline: none                   
         .gallery
             display: flex
             flex-wrap: wrap        
@@ -197,8 +204,7 @@ body
                 max-width: 140px
                 max-height: 67px
                 margin: 2px
-                object-fit: cover
-        
+                object-fit: cover        
         .tweets
             li
                 line-height: 15px
@@ -210,30 +216,27 @@ body
                     position: absolute
                     height: 30px 
                     width: 30px
-                    fill: #FFF 
+                    fill: $white 
                     background-image: url('../src/twitter-brands.svg')
                     background-size: contain
                     background-repeat: no-repeat
-                    left: 0
-                    
-                    
+                    left: 0                    
             span
-                color: #FFEA00
+                color: $yellow
             .time
-                color: #FFEA00
+                color: $yellow
                 font-size: 8px
             p
                 margin-bottom: 0px
             a
                 font-size: 13px
-
         .social
             display: flex
             justify-content: space-between
-            span
-                font-size: 18px
-                color: #FFF   
-        
+            h3
+                margin-top: 5px
+                font-size: 16px
+                color: $white          
         .social-networks
             display: flex
             flex-direction: row
@@ -242,28 +245,27 @@ body
             li
                 width: 30px
                 height: 30px
-                background-color: #000
+                background-color: $black
             i
                 padding: 7px
             .fa-facebook-f:hover
-                color: #2F55A4
+                color: $light-blue
             .fa-google-plus-g:hover
-                color: #86000b
+                color: $dark-red
             .fa-tumblr:hover
-                color: #34526F
+                color: $dark-blue
             .fa-linkedin-in:hover
-                color: #000000
-                background-color: #FFF
+                color: $black
+                background-color: $white
             .fa-youtube-square:hover
-                color: #FF0000
+                color: $red
             .fa-blogger-b:hover
-                color: #FF9100
+                color: $orange
             .fa-rss:hover
-                color: #000000
-                background-color: #FFF
+                color: $black
+                background-color: $white
             .fa-dribbble:hover
-                color: #FF00EA
-        
+                color: $pink        
         address
             padding-top: 5px
             font-style: normal
@@ -274,37 +276,36 @@ body
                     padding: 6px
                     width: 28px
                     height: 28px
-                    background-color: #000
-                    color: #FFF
+                    background-color: $black
+                    color: $white
                 a
                     font-size: 16px
                     text-decoration: none
-                    color: #FFF
+                    color: $white
                     &:hover
-                        color: #FFEA00
+                        color: $yellow
                 p
                     display: inline
                     font-size: 13px
                 span
                     font-size: 13
-                    color: #FFF
-        .email
-            
+                    color: $white
+        .email           
             border: none
-            background-color: #414146
-            border-bottom: 2px solid #FFEA00
+            background-color: $gray
+            border-bottom: 2px solid $yellow
         .formEmailButton
             width: 35px
             height: 35px
-            background-color: #000
-            color: #FFF
+            background-color: $black
+            color: $white
             font-size: 25px
             text-align: center
             border-style: none
             &:hover
-                color: #FFEA00    
+                color: $yellow    
 .black
-    background-color: #000
+    background-color: $black
     padding-top: 30px
     padding-bottom: 20px
     .container
@@ -313,7 +314,7 @@ body
         flex-wrap: wrap
         p
         font-size: 14px
-        color: #FFF
+        color: $white
     .copyright
         text-align: center
         padding-bottom: 10px
@@ -323,16 +324,15 @@ body
         display: flex
         justify-content: space-between      
         a
-            color: #FFF
+            color: $white
+            font-family: $menu-font
             text-decoration: none
             text-transform: uppercase
             padding: 20px 6px
             &:hover
-                color: #000
-                background-color: #FFEA00
-                text-decoration: none
-
-            
+                color: $black
+                background-color: $yellow
+                text-decoration: none            
 @media screen and ( max-width: 420px )
     .description
         h2
@@ -353,13 +353,15 @@ body
         justify-content: center
     .social
         flex-direction: column
-        span
+        h3
             text-align: center
     .social-networks
         width: 100%
     .follow-us
         margin-bottom: 15px
-    
+    .footer-menu
+        width: 80%
+        flex-wrap: wrap    
 @media screen and ( max-width: 576px ) 
     .description
         h2
@@ -375,7 +377,7 @@ body
             width: 90%  
     .social
         flex-direction: column
-        span
+        h3
             text-align: center
     .social-networks
         width: 100%
@@ -386,7 +388,6 @@ body
     .black
         .container
             justify-content: center
-
 @media screen and ( max-width: 768px )
     .social
         flex-direction: column
@@ -401,26 +402,19 @@ body
     .black
         .container
             justify-content: center
-
 @media screen and ( max-width: 992px )
     .faces
         img
             width: 90%
             margin: 0 auto
-    .social
-        flex-direction: column
-        margin-left: -100px
-        span
-            text-align: center
+    .social   
+        flex-direction: column 
     .social-networks
         width: 100%
-        margin-left: 80px
         margin-top: 10px
     .email
         margin-top: 3px
         width: 75%
     .black
         .container
-            flex-wrap: wrap
-            
-            
+            flex-wrap: wrap                    
