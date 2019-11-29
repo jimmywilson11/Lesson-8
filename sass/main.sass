@@ -121,8 +121,18 @@ body
     &::before
         position: absolute
         content: ''
-        width: calc(50% + 760px)
+        width: calc(50% + 60px)
         right: 110%
+        display: block
+        height: 2px
+        background: $gray
+        z-index: 1
+        top: 50%
+    &::after
+        position: absolute
+        content: ''
+        width: calc(50% + 60px)
+        left: 110%
         display: block
         height: 2px
         background: $gray
@@ -149,22 +159,22 @@ body
     p
         margin-top: 34px
         text-align: center
-.owl-nav
-    position: absolute
-    z-index: 2
-    padding: 7px 7px
-    background-color: $black
-    cursor: pointer
-    opacity: 1
-    span
-        color: $white
-    &:hover 
-        opacity: 0.7 
-    .arrow-left  
-        top: 50%
-        left: -800%
-    .arrow-right 
-        top: 50%           
+.owl-carousel
+    .owl-nav
+        position: absolute
+        z-index: 2
+        padding: 7px 7px
+        background-color: $black
+        cursor: pointer
+        opacity: 1
+        span
+            color: $white
+        &:hover 
+            opacity: 0.7 
+        .arrow-left  
+            top: 50%
+        .arrow-right 
+            top: 50%           
 .big-inf
     padding-top: 30px
     background-color: $light-gray

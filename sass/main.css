@@ -184,8 +184,20 @@ body {
 .head-block::before {
   position: absolute;
   content: '';
-  width: calc(50% + 760px);
+  width: calc(50% + 60px);
   right: 110%;
+  display: block;
+  height: 2px;
+  background: #414146;
+  z-index: 1;
+  top: 50%;
+}
+
+.head-block::after {
+  position: absolute;
+  content: '';
+  width: calc(50% + 60px);
+  left: 110%;
   display: block;
   height: 2px;
   background: #414146;
@@ -225,7 +237,7 @@ body {
   text-align: center;
 }
 
-.owl-nav {
+.owl-carousel .owl-nav {
   position: absolute;
   z-index: 2;
   padding: 7px 7px;
@@ -234,20 +246,19 @@ body {
   opacity: 1;
 }
 
-.owl-nav span {
+.owl-carousel .owl-nav span {
   color: #FFF;
 }
 
-.owl-nav:hover {
+.owl-carousel .owl-nav:hover {
   opacity: 0.7;
 }
 
-.owl-nav .arrow-left {
+.owl-carousel .owl-nav .arrow-left {
   top: 50%;
-  left: -800%;
 }
 
-.owl-nav .arrow-right {
+.owl-carousel .owl-nav .arrow-right {
   top: 50%;
 }
 
